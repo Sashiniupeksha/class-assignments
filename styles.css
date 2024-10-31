@@ -1,0 +1,125 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Section Styling */
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f0f0f0; /* Adjust color as desired */
+    padding: 5px;
+    border: 1px solid black;
+    
+}
+/* Desktop (default) */
+@media (min-width: 992px) {
+    .section {
+        width: 32%;
+        float: left;
+    }
+}
+/* Background colors */
+#chicken {
+    background-color: #ffcccc;
+}
+#beef {
+    background-color: #ccffcc;
+}
+#sushi {
+    background-color: #ccccff;
+}
+
+/* Title colors */
+#chicken .section-title {
+    background-color: #ff9999;
+}
+#beef .section-title {
+    background-color: #99ff99;
+}
+#sushi .section-title {
+    background-color: #9999ff;
+}
+h1 {
+    font-size: 1.75em;
+}
+.section-title {
+    font-size: 1.25em;
+}
+.menu-container {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+.menu-item {
+    background-color: #6e6e6e;
+    
+    padding: 20px;
+    flex: 1 1 30%; /* Each item takes up 30% of the container on desktop */
+    min-width: 250px;
+    border-radius: 5px;
+    border: 2px solid black;
+    position: relative;
+    text-align: left;
+}.menu-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.menu-header h1{
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu-header h1{
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+.menu-header {
+    text-align: center;
+    margin-bottom: 2px;
+    text-align: top;
+}   
+
+.menu {
+    display: flex;
+    
+    width: 100%;
+}
+
+.menu-item  {
+    background-color: #5e5e5e;
+    
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+    position: 5px;
+    text-align: left;
+}
+
+.menu-item p {
+    text-align: center;
+     
+}
